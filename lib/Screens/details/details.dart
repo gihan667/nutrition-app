@@ -52,57 +52,59 @@ class DetailsScreen extends StatelessWidget {
             ),
             child: SingleChildScrollView(
               padding: EdgeInsets.fromLTRB(kDefaultPadding, 0, kDefaultPadding, kDefaultPadding),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  TitleBar(item: item),
+              child: SafeArea(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    TitleBar(item: item),
 
-                  SizedBox(height: kDefaultPadding),
+                    SizedBox(height: kDefaultPadding),
 
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Detail',
-                        style: TextStyle(
-                          fontSize: 18
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          'Detail',
+                          style: TextStyle(
+                            fontSize: 18
+                          ),
                         ),
+
+                        QtyCounter(),
+                      ],
+                    ),
+
+                    SizedBox(height: kDefaultPadding),
+
+                    Text(
+                      item.description,
+                      style: TextStyle(
+                        fontSize: 14
                       ),
-
-                      QtyCounter(),
-                    ],
-                  ),
-
-                  SizedBox(height: kDefaultPadding),
-
-                  Text(
-                    item.description,
-                    style: TextStyle(
-                      fontSize: 14
                     ),
-                  ),
 
-                  SizedBox(height: kDefaultPadding),
+                    SizedBox(height: kDefaultPadding),
 
-                  Vitamins(item: item),
+                    Vitamins(item: item),
 
-                  SizedBox(height: kDefaultPadding),
+                    SizedBox(height: kDefaultPadding),
 
-                  Text(
-                    'Ingredients',
-                    style: TextStyle(
-                      fontSize: 18
+                    Text(
+                      'Ingredients',
+                      style: TextStyle(
+                        fontSize: 18
+                      ),
                     ),
-                  ),
 
-                  SizedBox(height: kDefaultPadding),
+                    SizedBox(height: kDefaultPadding),
 
-                  Ingredients(item: item),
+                    Ingredients(item: item),
 
-                  SizedBox(height: kDefaultPadding * 2),
+                    SizedBox(height: kDefaultPadding * 2),
 
-                  PriceAndBuy(item: item)
-                ],
+                    PriceAndBuy(item: item)
+                  ],
+                ),
               ),
             ),
           ),

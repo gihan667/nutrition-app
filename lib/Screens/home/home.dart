@@ -36,61 +36,64 @@ class HomeScreen extends StatelessWidget {
       bottomNavigationBar: BottomNavBar(),
       extendBody: true,
       body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(kDefaultPadding, kDefaultPadding, kDefaultPadding, kDefaultPadding * 5),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              'Find the Best\nHealth for You',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 24,
-                fontWeight: FontWeight.w700
-              ),
-            ),
-
-            SizedBox(height: kDefaultPadding),
-
-            SearchBar(),
-
-            Row(
-              children: [
-
-                FilterButton(
-                  tap: () {},
+        padding: EdgeInsets.all(kDefaultPadding),
+        child: SafeArea(
+          // bottom: false,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Find the Best\nHealth for You',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                  fontWeight: FontWeight.w700
                 ),
-
-                Expanded(child: Categories())
-                
-              ]
-            ),
-
-            SizedBox(height: kDefaultPadding),
-
-            Text(
-              'Popular',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 18,
               ),
-            ),
 
-            SizedBox(height: kDefaultPadding),
+              SizedBox(height: kDefaultPadding),
 
-            StaggeredGridView.countBuilder(
-               padding: EdgeInsets.all(0),
-               crossAxisCount: 2,
-               itemCount: demoItems.length,
-               crossAxisSpacing: 10,
-               physics: NeverScrollableScrollPhysics(),
-               shrinkWrap: true,
-               mainAxisSpacing: 0,
-               itemBuilder: (context, index) {
-                 return ItemCard(item: demoItems[index], index: index);
-               },
-               staggeredTileBuilder: (index) => StaggeredTile.fit(1),
-             ),
-          ],
+              SearchBar(),
+
+              Row(
+                children: [
+
+                  FilterButton(
+                    tap: () {},
+                  ),
+
+                  Expanded(child: Categories())
+                  
+                ]
+              ),
+
+              SizedBox(height: kDefaultPadding),
+
+              Text(
+                'Popular',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                ),
+              ),
+
+              SizedBox(height: kDefaultPadding),
+
+              StaggeredGridView.countBuilder(
+                 padding: EdgeInsets.all(0),
+                 crossAxisCount: 2,
+                 itemCount: demoItems.length,
+                 crossAxisSpacing: 10,
+                 physics: NeverScrollableScrollPhysics(),
+                 shrinkWrap: true,
+                 mainAxisSpacing: 0,
+                 itemBuilder: (context, index) {
+                   return ItemCard(item: demoItems[index], index: index);
+                 },
+                 staggeredTileBuilder: (index) => StaggeredTile.fit(1),
+               ),
+            ],
+          ),
         ),
       ),
     );

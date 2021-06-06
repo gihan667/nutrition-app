@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/services.dart';
 
-import '../constants.dart';
-
-AppBar buildAppBar(BuildContext context, {String title, List<Widget> actions, Widget leading}) {
+AppBar cbuildAppBar(BuildContext context, {String title, List<Widget> actions, Widget leading}) {
   return AppBar(
     backgroundColor: Colors.transparent,
+    brightness: Brightness.dark,
     elevation: 0,
     title: Text(
       title,
