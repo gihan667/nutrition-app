@@ -1,16 +1,11 @@
-# nutrition_app
+# Flutter Food Store UI
 
-A new Flutter project.
+## [Watch it on YouTube](https://youtu.be/eJatCOp4K6w)
 
-## Getting Started
+In this video we will create two screens for ecommerce app using #flutter. In Home screen there will be items grid and category selector. In Details screen we display selected item details. We using #Hero widget to implement #animation.
 
-This project is a starting point for a Flutter application.
+#### [Design Credits](https://www.uplabs.com/posts/food-nutrition-app-challenge)
 
-A few resources to get you started if this is your first Flutter project:
+### Preview
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![App UI](/preview.png)
