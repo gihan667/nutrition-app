@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-AppBar cbuildAppBar(BuildContext context, {String title, List<Widget> actions, Widget leading}) {
+AppBar buildAppBar(BuildContext context, {String title, List<Widget> actions, Widget leading}) {
   return AppBar(
     backgroundColor: Colors.transparent,
     brightness: Brightness.dark,
