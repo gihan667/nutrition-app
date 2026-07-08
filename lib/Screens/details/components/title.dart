@@ -6,9 +6,8 @@ import '../../../constants.dart';
 
 class TitleBar extends StatelessWidget {
   const TitleBar({
-    Key key,
-    @required this.item,
-  }) : super(key: key);
+    required this.item,
+  });
 
   final Item item;
 

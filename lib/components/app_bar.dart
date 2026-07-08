@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-AppBar buildAppBar(BuildContext context, {String title, List<Widget> actions, Widget leading}) {
+AppBar buildAppBar(BuildContext context, {required String title, required List<Widget> actions, required Widget leading}) {
   return AppBar(
     backgroundColor: Colors.transparent,
-    brightness: Brightness.dark,
     elevation: 0,
     title: Text(
       title,
@@ -15,5 +14,6 @@ AppBar buildAppBar(BuildContext context, {String title, List<Widget> actions, Wi
     centerTitle: true,
     leading: leading,
     actions: actions,
+    systemOverlayStyle: SystemUiOverlayStyle.light,
   );
 }

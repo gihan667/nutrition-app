@@ -13,7 +13,7 @@ import 'components/vitamins.dart';
 class DetailsScreen extends StatelessWidget {
   final Item item;
 
-  const DetailsScreen({Key key, this.item}) : super(key: key);
+  const DetailsScreen({required this.item});
 
   @override
   Widget build(BuildContext context) {

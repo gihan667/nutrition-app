@@ -4,9 +4,9 @@ class Category {
   String icon;
 
   Category({
-    this.id,
-    this.name,
-    this.icon
+    required this.id,
+    required this.name,
+    required this.icon
   });
 }
 

@@ -4,9 +4,8 @@ import '../../../constants.dart';
 
 class BuyButton extends StatelessWidget {
   const BuyButton({
-    Key key,
-    @required this.tap,
-  }) : super(key: key);
+    required this.tap,
+  });
 
   final GestureTapCallback tap;
 

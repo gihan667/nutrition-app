@@ -6,9 +6,8 @@ import 'buy_button.dart';
 
 class PriceAndBuy extends StatelessWidget {
   const PriceAndBuy({
-    Key key,
-    @required this.item,
-  }) : super(key: key);
+    required this.item,
+  });
 
   final Item item;
 

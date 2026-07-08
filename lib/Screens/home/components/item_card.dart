@@ -8,9 +8,9 @@ import '../../../constants.dart';
 
 class ItemCard extends StatelessWidget {
   const ItemCard({
-    Key key,
-    @required this.item,
-    @required this.index,
+    Key? key,
+    required this.item,
+    required this.index,
   }) : super(key: key);
 
   final Item item;

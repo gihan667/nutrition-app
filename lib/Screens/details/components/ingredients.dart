@@ -7,9 +7,8 @@ import '../../../constants.dart';
 
 class Ingredients extends StatelessWidget {
   const Ingredients({
-    Key key,
-    @required this.item,
-  }) : super(key: key);
+    required this.item,
+  });
 
   final Item item;
 

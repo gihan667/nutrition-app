@@ -4,9 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../constants.dart';
 
 class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({
-    Key key,
-  }) : super(key: key);
+  const BottomNavBar();
 
   @override
   Widget build(BuildContext context) {
@@ -49,10 +47,9 @@ class BottomNavBar extends StatelessWidget {
 
 class NavItem extends StatelessWidget {
   const NavItem({
-    Key key,
-    @required this.tap,
-    @required this.icon
-  }) : super(key: key);
+    required this.tap,
+    required this.icon
+  });
 
   final GestureTapCallback tap;
   final String icon;

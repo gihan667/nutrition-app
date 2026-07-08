@@ -5,9 +5,7 @@ import 'package:nutrition_app/Models/Category.dart';
 import '../../../constants.dart';
 
 class Categories extends StatefulWidget {
-  const Categories({
-    Key key,
-  }) : super(key: key);
+  const Categories();
 
   @override
   _CategoriesState createState() => _CategoriesState();

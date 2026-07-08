@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../constants.dart';
 
 class QtyCounter extends StatelessWidget {
-  const QtyCounter({
-    Key key,
-  }) : super(key: key);
+  const QtyCounter();
 
   @override
   Widget build(BuildContext context) {
@@ -39,10 +37,9 @@ class QtyCounter extends StatelessWidget {
 
 class QtyButton extends StatelessWidget {
   const QtyButton({
-    Key key,
-    @required this.tap,
-    @required this.text,
-  }) : super(key: key);
+    required this.tap,
+    required this.text,
+  });
 
   final GestureTapCallback tap;
   final String text;

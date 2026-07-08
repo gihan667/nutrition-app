@@ -6,9 +6,8 @@ import '../../../constants.dart';
 
 class Vitamins extends StatelessWidget {
   const Vitamins({
-    Key key,
-    @required this.item,
-  }) : super(key: key);
+    required this.item,
+  });
 
   final Item item;
 

@@ -6,8 +6,8 @@ import '../../../constants.dart';
 
 class FilterButton extends StatelessWidget {
   const FilterButton({
-    Key key,
-    @required this.tap,
+    Key? key,
+    required this.tap,
   }) : super(key: key);
 
   final GestureTapCallback tap;
