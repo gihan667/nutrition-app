@@ -66,7 +66,7 @@ class DetailsScreen extends StatelessWidget {
                         Text(
                           'Detail',
                           style: TextStyle(
-                            fontSize: 18
+                            fontSize: 18,
                           ),
                         ),
 

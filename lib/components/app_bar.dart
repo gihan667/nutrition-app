@@ -8,7 +8,8 @@ AppBar buildAppBar(BuildContext context, {required String title, required List<W
     title: Text(
       title,
       style: TextStyle(
-        fontWeight: FontWeight.w300
+        fontWeight: FontWeight.w300,
+        color: Colors.white,
       ),
     ),
     centerTitle: true,
